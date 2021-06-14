@@ -1,0 +1,62 @@
+// compress: true
+
+@import "vars";
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0 0 1rem;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+
+    &.no-scroll {
+        overflow: hidden
+    }
+}
+
+/* Vendor */
+@import "vendor/slick.less";
+
+
+/* Blocks */
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/user.less";
+@import "blocks/nav.less";
+@import "blocks/burger.less";
+@import "blocks/intro.less";
+@import "blocks/social.less";
+@import "blocks/btn.less";
+@import "blocks/works.less";
+@import "blocks/portfolio.less";
+@import "blocks/work.less";
+@import "blocks/about.less";
+@import "blocks/news.less";
+@import "blocks/articles.less";
+@import "blocks/footer.less";
+
+/* Modals */
+@import "blocks/modal.less";
+@import "blocks/modal-work.less";
+@import "blocks/contact.less";
+@import "blocks/form.less";
+
+
+
+/* Helpers */
+@import "blocks/helpers.less";
+

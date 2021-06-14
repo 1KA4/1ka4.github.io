@@ -1,0 +1,139 @@
+{
+    "projects":[
+        {
+            "work_id": 1,
+                "photos_path": "images/works/todolist/to-do-list.png,images/works/todolist/todo2.png,images/works/todolist/todo3.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "ToDoList,https://1ka4todolist.000webhostapp.com/login.php",
+
+                "title": "To do list",
+
+                "description": "Help you manage your tasks."
+
+        },
+        {
+            "work_id": 2,
+                "photos_path": "images/works/business-card.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "Bussines Card,https://1ka4.github.io/business-card/",
+
+                "title": "Bussines Card",
+
+                "description": "My Web Bussines Card :)"
+
+        },
+        {
+            "work_id": 3,
+                "photos_path": "images/works/old-portfolio.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "My old portfolio,https://1ka4.github.io/",
+
+                "title": "My old portfolio",
+
+                "description": "A long time ago I created this! It is my old portfolio. "
+
+        },
+        {
+            "work_id": 4,
+                "photos_path": "images/works/bootstrap-example.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "Bootstrap Example,https://1ka4.github.io/bootstrap-example/",
+
+                "title": "Bootstrap Example",
+
+                "description": "I created this when I practiced Bootstrap."
+
+        },
+        {
+            "work_id": 5,
+                "photos_path": "images/works/shoping-list.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "Shopping list,https://1ka4.github.io/shoping-list/",
+
+                "title": "Shopping list",
+
+                "description": "If you’re going to the store, use this. \n The simple Shoping List!"
+
+        },
+        {
+            "work_id": 6,
+                "photos_path": "images/works/music-maker.png",
+
+                "category": "Game",
+
+                "date_year": 2020,
+
+                "project_link": "Music bubbles,https://1ka4.github.io/music-bubbles/",
+
+                "title": "Music bubbles",
+
+                "description": "Make music with fun :)"
+
+        },
+        {
+            "work_id": 7,
+                "photos_path": "images/works/selfy/selfy.png,images/works/selfy/selfy2.png,images/works/selfy/selfy3.png,images/works/selfy/selfy4.png,images/works/selfy/selfy5.png,images/works/selfy/selfy6.png",
+
+                "category": "Website",
+
+                "date_year": 2020,
+
+                "project_link": "Selfy,https://1ka4.github.io/selfy/",
+
+                "title": "Selfy",
+
+                "description": "This is my recent project"
+
+        },
+        {
+            "work_id": 8,
+                "photos_path": "images/works/tic-tac-toe.png",
+
+                "category": "Game",
+
+                "date_year": 2020,
+
+                "project_link": "TicTacToe,https://1ka4.github.io/tic-tac-toe/",
+
+                "title": "TicTacToe",
+
+                "description": "The traditional funny game :)"
+
+        },
+        {
+            "work_id": 9,
+                "photos_path": "images/works/simple-calc.png",
+
+                "category": "Application",
+
+                "date_year": 2019,
+
+                "project_link": "Simple calculator,https://1ka4.github.io/simple-calculator/",
+
+                "title": "Simple calculator",
+
+                "description": "The simple and fast calculator"
+
+        }
+    ]
+}
