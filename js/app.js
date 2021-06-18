@@ -4,6 +4,53 @@ $(function(){
 
     let worksSlider = $('[data-slider="slick"]');
 
+    /* Load Work */
+    ///////////////////////////////////////////
+
+    //Hide Works/Show Works
+    function addWorksClass(quantity, addClass, removeClass){
+        let works = $('.portfolio__col');
+
+        if(quantity == "all"){
+            for (let i = 0; i < works.length; i++) {
+                $(works[i]).addClass(addClass);
+                $(works[i]).removeClass(removeClass);
+            }
+        }else{
+            for (let i = 0; i < works.length; i++) {
+                if(i > quantity){
+                    $(works[i]).addClass(addClass);
+                    $(works[i]).removeClass(removeClass);
+                }
+            }
+        }
+    }
+
+    addWorksClass(displayWorks, "hide", "show");
+
+
+    // Load Btn
+    let loadWorkBtn = $("[data-state]");
+
+    loadWorkBtn.on("click", function(event){
+        event.preventDefault();
+        let btnData = loadWorkBtn.data("state");
+        console.log(btnData);
+        
+        if(btnData == "load"){
+            addWorksClass("all", "", "hide");
+            loadWorkBtn.text("Hide More");
+            loadWorkBtn.data("state", "hide");
+
+        }
+
+        if(btnData == "hide"){
+            addWorksClass(displayWorks, "hide", "");
+            loadWorkBtn.text("Load More");
+            loadWorkBtn.data("state", "load");
+        }
+    });
+
     /* Filter */
     ///////////////////////////////////////////
     let filter = $("[data-filter]");
@@ -15,7 +62,12 @@ $(function(){
 
         if(cat == "all"){
             $("[data-cat]").removeClass("hide");
+            loadWorkBtn.removeClass("hide");
+            loadWorkBtn.text("Hide More");
+            loadWorkBtn.data("state", "hide");
         }else{
+            loadWorkBtn.addClass("hide");
+
             $("[data-cat]").each(function(){
                 let workCat = $(this).data("cat");
     
@@ -110,56 +162,6 @@ $(function(){
           let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
 
           currentSlider.slick("slickNext");
-    });
-
-
-
-    /* Load Work */
-    ///////////////////////////////////////////
-
-    //Hide Works/Show Works
-    function addWorksClass(quantity, addClas, removeClas){
-        let works = $('.portfolio__col');
-
-        if(quantity == "all"){
-            for (let i = 0; i < works.length; i++) {
-                $(works[i]).addClass(addClas);
-                $(works[i]).removeClass(removeClas);
-            }
-            
-        }else{
-            for (let i = 0; i < works.length; i++) {
-                if(i > quantity){
-                    $(works[i]).addClass(addClas);
-                    $(works[i]).removeClass(removeClas);
-                }
-            }
-        }
-    }
-
-    addWorksClass(displayWorks, "hide", "show");
-
-
-    // Load Btn
-    let loadWorkBtn = $("[data-state]");
-
-    loadWorkBtn.on("click", function(event){
-        event.preventDefault();
-        let btnData = loadWorkBtn.data("state");
-        console.log(btnData);
-        
-        if(btnData == "load"){
-            addWorksClass("all", "", "hide");
-            loadWorkBtn.text("Hide More");
-            loadWorkBtn.data("state", "hide");
-
-        }
-
-        if(btnData == "hide"){
-            addWorksClass(displayWorks, "hide", "");
-            loadWorkBtn.text("Load More");
-            loadWorkBtn.data("state", "load");
-        }
     });
 
 
