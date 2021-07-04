@@ -31,36 +31,6 @@
 
         },
         {
-            "work_id": 3,
-                "photos_path": "images/works/old-portfolio.png",
-
-                "category": "Website",
-
-                "date_year": 2020,
-
-                "project_link": "My old portfolio,https://1ka4.github.io/old-portfolio/",
-
-                "title": "My old portfolio",
-
-                "description": "A long time ago I created this! It is my old portfolio. "
-
-        },
-        {
-            "work_id": 4,
-                "photos_path": "images/works/bootstrap-example.png",
-
-                "category": "Website",
-
-                "date_year": 2020,
-
-                "project_link": "Bootstrap Example,https://1ka4.github.io/bootstrap-example/",
-
-                "title": "Bootstrap Example",
-
-                "description": "I created this when I practiced Bootstrap."
-
-        },
-        {
             "work_id": 5,
                 "photos_path": "images/works/shoping-list.png",
 
